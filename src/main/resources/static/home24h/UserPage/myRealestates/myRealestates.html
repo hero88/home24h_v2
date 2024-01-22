@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Home 24h</title>
+
+      <!--Boottrap, JQuery-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <!--FONT AWESOME-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+      <link
+         href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Lora&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Toastr -->
+      <link rel="stylesheet" href="../../assets/plugin/adminLTE/toastr/toastr.min.css" />
+      <script src="../../assets/plugin/adminLTE/toastr/toastr.min.js"></script>
+
+      <script src="../../assets/js/userPage/myRealestates/myRealestates.js"></script>
+   </head>
+   <body>
+      <div id="header">
+         <!-- 1. Header - Navbar menu -->
+         <section style="background-color: rgb(11, 44, 61)">
+            <div id="header-navbar" style="background-color: rgb(11, 44, 61)" class="">
+               <nav class="navbar navbar-light navbar-expand-lg container">
+                  <a href="../home/home.html" class="navbar-brand">
+                     <img src="/images/Default/logo-white.png" />
+                  </a>
+                  <button
+                     class="navbar-toggler py-2"
+                     type="button"
+                     data-toggle="collapse"
+                     data-target="#navbarSupportedContent"
+                     aria-controls="navbarSupportedContent"
+                     aria-expanded="false"
+                     aria-label="Toggle navigation"
+                     style="background-color: #b39359"
+                  >
+                     <i class="fa-solid fa-bars text-light"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active px-2">
+                           <a class="nav-link" href="../home/home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                           <a
+                              class="nav-link"
+                              href="#"
+                              id="navbarDropdown2"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                           >
+                              Properties
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                              <a class="dropdown-item" href="#">Vision & Mission</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Team</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                              <hr class="p-0 m-0" />
+                           </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                           <a
+                              class="nav-link"
+                              href="#"
+                              id="navbarDropdown2"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                           >
+                              Pages
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                              <a class="dropdown-item" href="#">Vision & Mission</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Team</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                              <hr class="p-0 m-0" />
+                           </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                           <a
+                              class="nav-link"
+                              href="#"
+                              id="navbarDropdown5"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                           >
+                              Contact
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                              <a class="dropdown-item" href="#">Vision & Mission</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Team</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                              <hr class="p-0 m-0" />
+                           </div>
+                        </li>
+                     </ul>
+                     <div id="container-infoAccount" style="display: none">
+                        <ul class="navbar-nav ml-auto">
+                           <li class="nav-item dropdown px-2">
+                              <a
+                                 class="nav-link a-info"
+                                 href="#"
+                                 id="navbarDropdown2"
+                                 role="button"
+                                 data-toggle="dropdown"
+                                 aria-haspopup="true"
+                                 aria-expanded="false"
+                              >
+                              </a>
+                              <div class="dropdown-menu mb-2" aria-labelledby="navbarDropdown2">
+                                 <a
+                                    class="dropdown-item dashboardPage"
+                                    href="../../DashBoard/RealestateAdmin/RealestateAdmin.html"
+                                    style="display: none"
+                                    >DashBoard</a
+                                 >
+                                 <hr class="p-0 m-0" />
+                                 <a class="dropdown-item" href="../../UserPage/infoAccount/infoAccount.html">Account</a>
+                                 <hr class="p-0 m-0" />
+                                 <a class="dropdown-item" href="../../UserPage/myRealestates/myRealestates.html"
+                                    >My Realestates</a
+                                 >
+                                 <hr class="p-0 m-0" />
+                                 <a class="dropdown-item" href="../../UserPage/addRealestates/addRealestates.html"
+                                    >Add Realestates</a
+                                 >
+                                 <hr class="p-0 m-0" />
+                              </div>
+                           </li>
+                           <li class="nav-item">
+                              <button class="btn btn-danger" id="btn-logout">Log Out</button>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div id="container-loginAndRegister" class="my-2">
+                        <a href="../register/register.html" class="btn px-2 mx-2 bg-primary text-white">Register</a>
+                        <a href="../login/login.html" class="btn px-2 bg-info text-white">Log In</a>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </section>
+
+         <!--BackGround Header-->
+         <section class="bg-header align-items-center d-flex">
+            <div class="container text-white text-center">
+               <h6>My Realestates</h6>
+               <h1>My Realestates</h1>
+               <h5>Profile, status of your real estate projects. You can update them here</h5>
+            </div>
+         </section>
+
+         <!--end-->
+      </div>
+
+      <div id="main">
+         <!--FORM THÔNG TIN-->
+         <section id="main-form" class="py-5 my-5">
+            <div class="container">
+               <div id="wrapperStatusTab">
+                  <ul id="tabs">
+                     <li data-target="approval"><a href="#" title="tab1">Approval</a></li>
+
+                     <li data-target="pendingApproval"><a href="#" title="tab2">Pending Approval</a></li>
+
+                     <li data-target="pendingDelete"><a href="#" title="tab3">Pending Delete</a></li>
+                  </ul>
+               </div>
+
+               <div id="content">
+                  <div id="wrapperRealestates">
+                     <!--CARD-->
+                     <!-- <div class="row my-card">
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                           <div class="my-card-img">
+                              <img src="/images/ApartmentHD-5.jpg" alt="Img" />
+                           </div>
+                        </div>
+
+                        <div class="col-xl-9 col-md-8 col-sm-6 col-12 my-card-info mt-2">
+                           <div class="my-card-title">
+                              <h5>
+                                 Bán gấp nhà đẹp Đà Lạt của Đại gia trung Bán gấp nhà đẹp Đà Lạt của Đại gia trung Bán
+                                 gấp nhà đẹp Đà Lạt của Đại gia trung Bán gấp nhà đẹp Đà Lạt của Đại gia trung
+                              </h5>
+                           </div>
+
+                           <div>
+                              <ul>
+                                 <li>Address: 254 Vĩnh Viễn, p4, q10, Tp HCM</li>
+                                 <li>Add: 30-11-2023 10:30:25</li>
+                                 <li>
+                                    <div class="d-flex justify-content-between">
+                                       <span><i class="fa-solid fa-bed"></i> 2</span>
+                                       <span><i class="fa-solid fa-restroom"></i> 3</span>
+                                       <span><i class="fa-solid fa-rug"></i> 100m<sup>2</sup></span>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <div class="d-flex justify-content-between">
+                              <div>
+                                 <h5 style="font-weight: bold">Giá: <span style="color: red">10 tỷ</span></h5>
+                              </div>
+                              <div>
+                                 <i
+                                    class="fa-solid fa-pen-to-square mr-2 text-primary"
+                                    title="Edit"
+                                    style="cursor: pointer"
+                                 ></i>
+                                 <i class="fa-solid fa-trash text-danger" title="Delete" style="cursor: pointer"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--END CARD-->
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--MAIN CONTACT US-->
+         <section id="main-contact">
+            <div class="" style="background-color: rgb(11, 44, 61); position: relative">
+               <img
+                  src="/images/Default/home-1.png"
+                  alt=""
+                  style="position: absolute; bottom: 0; right: 0; width: 25%"
+                  class="img-contact"
+               />
+               <div class="container">
+                  <div class="row py-5">
+                     <div class="col-sm-12 col-md-12 col-lg-6 col-12">
+                        <h2 class="text-white">Are you a Home Owner ?</h2>
+                        <p style="color: #b39359">Put your email address and get listed.</p>
+                        <div style="position: relative">
+                           <input
+                              type="text"
+                              name=""
+                              id=""
+                              class="form-control my-5"
+                              style="
+                                 background-color: transparent;
+                                 border-color: #b39359;
+                                 color: #fff;
+                                 height: 50px;
+                                 border-radius: 10px;
+                              "
+                           />
+                           <button style="position: absolute; top: 5px; right: 10px">Get Listed</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <!--FOOTER-->
+      <div id="footer">
+         <div class="py-3 container">
+            <div class="row py-5">
+               <div class="col-sm-3 col-12 pt-3">
+                  <img src="/images/Default/logo (1).svg" class="py-3" />
+                  <p>
+                     Properties are most budget friendly so you have are find opportunity is main responsibility to
+                     clients
+                  </p>
+               </div>
+               <div class="col-sm-3 col-12 p-3">
+                  <h4>Information.</h4>
+                  <p>Properties</p>
+                  <p>Careers</p>
+                  <p>Payment</p>
+                  <p>Blog Post</p>
+               </div>
+               <div class="col-sm-3 col-12 pt-3">
+                  <h4>Support.</h4>
+                  <p>Add Property</p>
+                  <p>Help line</p>
+                  <p>Our Agents</p>
+                  <p>features</p>
+               </div>
+               <div class="col-sm-3 col-12 pt-3">
+                  <h4>Address.</h4>
+                  <p>2104 Charmaine Lane Amarillo, New York</p>
+                  <span class="mr-3"><i class="fa-brands fa-square-facebook fa-2x"></i></span>
+                  <span class="mr-3"><i class="fa-brands fa-square-instagram fa-2x"></i></span>
+                  <span><i class="fa-brands fa-square-twitter fa-2x"></i></span>
+               </div>
+            </div>
+            <p class="pb-5">© <span style="color: #b39359">CodeCarnival.</span> All Rights Reserved - Privacy Policy</p>
+         </div>
+         <div>
+            <img class="img-footer img-fluid" src="/images/Default/pattern (1).png" alt="" />
+         </div>
+      </div>
+
+      <!--Vùng modal xóa dữ liệu-->
+      <div id="deleteRealestates-modal" class="modal fade" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content" style="border-radius: 15px; box-shadow: 5px 5px 10px rgb(208, 219, 219)">
+               <div class="modal-header">
+                  <h5 class="modal-title">Delete</h5>
+               </div>
+               <div class="modal-body">
+                  <form>
+                     <p>Are you sure you want to delete this Realestates?</p>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" id="btn-delete-modal">Confirm</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <style>
+      #tabs {
+         display: flex;
+
+         overflow-x: auto;
+
+         width: 100%;
+
+         list-style: none;
+
+         margin: 0;
+
+         padding: 0;
+      }
+
+      #tabs::-webkit-scrollbar {
+         width: 0.1em;
+      }
+
+      #tabs li {
+         margin: 0;
+
+         padding: 0;
+
+         float: left;
+      }
+
+      #tabs a {
+         box-shadow: -4px 0 0 rgba(0, 0, 0, 0.2);
+
+         background: #ad1c1c;
+
+         background: linear-gradient(220deg, transparent 10px, #f9d423 10px);
+
+         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+
+         color: black;
+
+         float: left;
+
+         font: bold 15px/35px "Lucida sans", Arial, Helvetica;
+
+         height: 35px;
+
+         padding: 0 30px;
+
+         text-decoration: none;
+      }
+
+      #tabs a:hover {
+         background: #c93434;
+
+         background: linear-gradient(220deg, transparent 10px, #ede574 10px);
+      }
+
+      #tabs a:focus {
+         outline: 0;
+      }
+
+      #tabs #current a {
+         background: #fff;
+
+         background: linear-gradient(220deg, transparent 10px, #fff 10px);
+
+         text-shadow: none;
+
+         color: #333;
+      }
+   </style>
+
+   <style>
+      :root {
+         --main-color: #b39359;
+      }
+
+      body {
+         font-family: "Lora";
+      }
+
+      button {
+         color: white;
+         font-weight: bold;
+         background-color: var(--main-color);
+         border: 1px solid transparent;
+         padding: 0.375rem 0.75rem;
+         font-size: 1rem;
+         border-radius: 10px;
+         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+         box-shadow: 1px 1px 10px 0.2px rgb(109, 109, 11);
+      }
+
+      button:hover {
+         transform: scale(1.1);
+         box-shadow: 1px 1px 10px 1px rgb(106, 124, 6);
+      }
+
+      button:focus {
+         outline: none;
+      }
+
+      /* PHẦN CSS HEADER */
+      /*-----------------------------------------*/
+      @media (max-width: 990px) {
+         .dropdown-menu {
+            background-color: transparent;
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin-top: 5px;
+            border: none;
+            box-shadow: none;
+            z-index: 200;
+         }
+
+         #header-navbar div > a {
+            color: white;
+            padding: 8px 30px;
+            font-size: 1.2rem;
+         }
+
+         a.dropdown-item::before {
+            content: "\25B6";
+            position: absolute;
+            left: 10px;
+            color: white;
+         }
+      }
+
+      #header-navbar li > a:nth-child(1) {
+         color: white;
+         font-size: 1.2rem;
+      }
+
+      #header-navbar div {
+         border-radius: 15px;
+      }
+
+      #header-navbar div > a:hover {
+         background-color: var(--main-color);
+      }
+
+      .bg-header {
+         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/Default/bg-1.png");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         height: 400px;
+      }
+
+      /* PHẦN CSS MAIN
+      -------------------------------------------- */
+      .inp-form {
+         border-radius: 10px;
+         border-color: #b39359;
+      }
+
+      @media screen and (max-width: 992px) {
+         .img-contact {
+            display: none;
+         }
+      }
+
+      .wrapperImage {
+         display: flex;
+         justify-content: start;
+         align-items: center;
+         cursor: pointer;
+      }
+
+      .note-error {
+         color: red;
+      }
+
+      .my-card {
+         margin: 15px 0px;
+         padding: 0px 0px;
+         border: 1px solid rgb(221, 205, 205);
+         border-radius: 10px;
+         box-shadow: 4px 0 0 rgba(0, 0, 0, 0.2);
+         background-color: rgb(248, 248, 248);
+         height: 180px;
+      }
+
+      .my-card-img {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         height: 100%;
+      }
+
+      .my-card-img img {
+         width: 100%;
+         object-fit: cover;
+         height: 160px;
+      }
+
+      .my-card-info {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+
+      .my-card-title {
+         color: var(--main-color);
+         display: -webkit-box;
+         -webkit-line-clamp: 2; /* Số dòng tối đa */
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+
+      .my-card ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+      }
+
+      @media screen and (max-width: 575px) {
+         .my-card {
+            height: 400px;
+         }
+
+         .my-card-img img {
+            height: 200px;
+         }
+
+         #wrapperStatusTab {
+            overflow-x: auto;
+            white-space: nowrap;
+         }
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 768px) {
+         .my-card {
+            height: 220px;
+         }
+
+         .my-card-img img {
+            height: 200px;
+         }
+      }
+      /* PHẦN CSS FOOTER */
+      /*-----------------------------------------*/
+      #footer {
+         position: relative;
+      }
+
+      .img-footer {
+         position: absolute;
+         bottom: 0;
+      }
+   </style>
+</html>

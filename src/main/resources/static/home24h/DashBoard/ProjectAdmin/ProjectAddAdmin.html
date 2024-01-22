@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Admin: Home24h</title>
+
+      <!--     Fonts and icons     -->
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
+      />
+
+      <!--FONT AWESOME-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+      <!-- Theme style -->
+      <link rel="stylesheet" href="../../assets/plugin/adminLTE/dist/css/adminlte.min.css" />
+
+      <!--Boottrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+      <!-- Toastr -->
+      <link rel="stylesheet" href="../../assets/plugin/adminLTE/toastr/toastr.min.css" />
+   </head>
+   <body class="hold-transition sidebar-mini">
+      <!-- Site wrapper -->
+      <div class="wrapper">
+         <!-- Navbar -->
+         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+               </li>
+            </ul>
+         </nav>
+         <!-- /.navbar -->
+
+         <!-- Main Sidebar Container -->
+         <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../../UserPage/Home/Home.html" class="brand-link">
+               <img
+                  src="https://tiimg.tistatic.com/co_logo/7562243/home24h-v3.jpg"
+                  class="brand-image img-circle elevation-3"
+                  style="opacity: 0.8"
+               />
+               <span class="brand-text font-weight-bold" style="color: wheat">Home24h</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+               <!-- Sidebar user (optional) -->
+               <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                  <!-- <div class="image">
+                    <img src="#" class="img-circle elevation-2" alt="User Image" />
+                  </div> -->
+                  <div class="info">
+                     <a href="#" class="text-center" style="font-weight: bold"></a>
+                  </div>
+               </div>
+
+               <!-- Sidebar Menu -->
+               <nav class="mt-2">
+                  <ul
+                     class="nav nav-pills nav-sidebar flex-column"
+                     data-widget="treeview"
+                     role="menu"
+                     data-accordion="false"
+                  >
+                     <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+
+                     <li class="nav-item">
+                        <a href="../LayoutAdmin/LayoutAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-layer-group"></i>
+                           <p>Mặt Bằng Tầng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../ContractorAdmin/ContractorAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-hard-hat"></i>
+                           <p>Nhà Thầu Xây Dựng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../DesignUnitAdmin/DesignUnitAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-drafting-compass"></i>
+                           <p>Đơn Vị Thiết Kế</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../InvestorAdmin/InvestorAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-user-tie"></i>
+                           <p>Nhà Đầu Tư</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../RegionLinkAdmin/RegionLinkAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-route"></i>
+                           <p>Kết Nối Vùng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../UtilitiesAdmin/UtilitiesAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-swimming-pool"></i>
+                           <p>Tiện Ích</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../CustomerAdmin/CustomerAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-user-friends"></i>
+                           <p>Khách Hàng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../UserAdmin/UserAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-user"></i>
+                           <p>Người Dùng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item activeLeftNav">
+                        <a href="../ProjectAdmin/ProjectAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-building"></i>
+                           <p>Dự Án Xây Dựng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../RealestateAdmin/RealestateAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-city"></i>
+                           <p>Thông Tin BĐS</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="#" class="nav-link">
+                           <i class="nav-icon fas fa-folder-plus"></i>
+                           <p>
+                              Địa Chính
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="../ProvinceAdmin/ProvinceAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Tỉnh Thành</p>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="../DistrictAdmin/DistrictAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Quận Huyện</p>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="../WardAdmin/WardAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Phường Xã</p>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="../StreetAdmin/StreetAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Đường Phố</p>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+
+                     <li class="nav-item" id="logout">
+                        <a href="#" class="nav-link">
+                           <i class="fa-solid fa-right-from-bracket"></i>
+                           <p>Đăng Xuất</p>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+         </aside>
+
+         <!-- Content Wrapper. Contains page content -->
+         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+               <div class="container-fluid">
+                  <div class="row mb-2">
+                     <div class="col-sm-6">
+                        <h1>Thêm Dự Án Xây Dựng</h1>
+                     </div>
+                     <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                           <li class="breadcrumb-item"><a href="#">Home</a></li>
+                           <li class="breadcrumb-item">
+                              <a href="../ProjectAdmin/ProjectAdmin.html">Dự Án</a>
+                           </li>
+                           <li class="breadcrumb-item active">Add</li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+               <!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+               <div class="my-4">
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-name">Tên Dự Án <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input type="text" name="" id="inp-name" class="form-control" placeholder="Tên Dự Án" />
+                        <span class="d-none note-error">Nhập tên</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-province">Tỉnh <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-province" class="form-control">
+                           <option value="0">Chọn Tỉnh/Thành</option>
+                        </select>
+                        <span class="d-none note-error">Chọn Tỉnh</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-district">Quận/Huyện <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-district" class="form-control">
+                           <option value="0">Chọn Quận/Huyện</option>
+                        </select>
+                        <span class="d-none note-error">Chọn Quận/Huyện</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-ward">Phường/Xã <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-ward" class="form-control">
+                           <option value="0">Chọn Phường/Xã</option>
+                        </select>
+                        <span class="d-none note-error">Chọn Phường/Xã</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-street">Đường <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-street" class="form-control">
+                           <option value="0">Chọn Đường</option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-address">Địa Chỉ <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input type="text" name="" id="inp-address" class="form-control" placeholder="Địa chỉ nhà" />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-description">Mô Tả</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <textarea
+                           name=""
+                           id="inp-description"
+                           cols="30"
+                           rows="5"
+                           class="form-control"
+                           placeholder="Mô tả"
+                        ></textarea>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-slogan">Slogan</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <textarea
+                           name=""
+                           id="inp-slogan"
+                           cols="30"
+                           rows="3"
+                           class="form-control"
+                           placeholder="Phương châm dự án"
+                        ></textarea>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-acreage">Tổng Diện Tích Dự Án</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           name=""
+                           id="inp-acreage"
+                           class="form-control"
+                           placeholder="Tổng diện tích dự án"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-constructArea">Tổng Diện Tích Xây Dựng</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           name=""
+                           id="inp-constructArea"
+                           class="form-control"
+                           placeholder="Tổng diện tích xây dựng"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-numBlock">Số Block</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           name=""
+                           id="inp-numBlock"
+                           class="form-control"
+                           placeholder="Số block dự án có"
+                           onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-numFloors">Số Tầng</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           name=""
+                           id="inp-numFloors"
+                           class="form-control"
+                           placeholder="Khoảng số tầng tương đối"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-numApartment">Tổng Căn Hộ</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           name=""
+                           id="inp-numApartment"
+                           class="form-control"
+                           placeholder="Tổng số căn hộ"
+                           onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-apartmentArea">Diện Tích Căn Hộ</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           name=""
+                           id="inp-apartmentArea"
+                           class="form-control"
+                           placeholder="Khoảng diện tích căn hộ"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-investor">Chủ Đầu Tư <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6 d-flex">
+                        <select name="" id="select-investor" class="form-control"></select>
+                        <button class="btn btn-primary ml-2" id="btn-addInvestor">
+                           <i class="fa-solid fa-plus"></i>
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-contractor">Chủ Thầu Xây Dựng <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6 d-flex">
+                        <select name="" id="select-contractor" class="form-control"></select>
+                        <button class="btn btn-primary ml-2" id="btn-addContractor">
+                           <i class="fa-solid fa-plus"></i>
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2 d-flex">
+                        <label for="select-designUnit">Đơn Vị Thiết Kế <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6 d-flex">
+                        <select name="" id="select-designUnit" class="form-control"></select>
+                        <button class="btn btn-primary ml-2" id="btn-addDesignUnit">
+                           <i class="fa-solid fa-plus"></i>
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label>Tiện Ích</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6" id="wrapper-utilities">
+                        <div></div>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-regionLink">Vùng Kết Nối</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6" id="wrapper-regionLink">
+                        <div></div>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-photo">Hình Ảnh</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input type="file" name="" id="inp-filePhoto" accept="image/*" />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2"></div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <div id="wrapper-photo"></div>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2"></div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <button class="btn btn-success" id="btn-add">Add</button>
+                        <a class="btn btn-danger" href="../ProjectAdmin/ProjectAdmin.html">Cancel</a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- /.content -->
+         </div>
+         <!-- /.content-wrapper -->
+         <footer class="main-footer">
+            <strong>Copyright &copy; 2022-2023 <a href="https://adminlte.io">Home24h</a>.</strong> All rights reserved.
+         </footer>
+      </div>
+      <!-- ./wrapper -->
+
+      <!-- -----------------------------------------------MODAL-------------------------------------------------------------------- -->
+      <!--Modal Investor-->
+      <div
+         class="modal fade"
+         id="investor-modal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thêm Chủ Đầu Tư</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div>
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-nameInvestor">Tên Chủ Đầu Tư <span style="color: red">*</span></label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-nameInvestor"
+                              class="form-control"
+                              placeholder="Tên Chủ Đầu Tư"
+                           />
+                           <span class="d-none note-error">Nhập tên</span>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-descriptionInvestor">Mô Tả</label>
+                        </div>
+                        <div class="col-12">
+                           <textarea
+                              name=""
+                              id="inp-descriptionInvestor"
+                              cols="30"
+                              rows="5"
+                              class="form-control"
+                              placeholder="Mô Tả"
+                           ></textarea>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-addressInvestor">Địa Chỉ Trụ Sở</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-addressInvestor"
+                              class="form-control"
+                              placeholder="Địa Chỉ Trụ Sở"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-phoneInvestor">Số Điện Thoại</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-phoneInvestor"
+                              class="form-control"
+                              placeholder="Số Điện Thoại"
+                              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-phone2Investor">Số Điện Thoại 2</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-phone2Investor"
+                              class="form-control"
+                              placeholder="Số Điện Thoại 2"
+                              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-faxInvestor">Fax</label>
+                        </div>
+                        <div class="col-12">
+                           <input type="text" name="" id="inp-faxInvestor" class="form-control" placeholder="Fax" />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-emailInvestor">Email</label>
+                        </div>
+                        <div class="col-12">
+                           <input type="text" name="" id="inp-emailInvestor" class="form-control" placeholder="Email" />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-websiteInvestor">Website</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-websiteInvestor"
+                              class="form-control"
+                              placeholder="Website"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-noteInvestor">Note</label>
+                        </div>
+                        <div class="col-12">
+                           <textarea
+                              name=""
+                              id="inp-noteInvestor"
+                              cols="30"
+                              rows="5"
+                              class="form-control"
+                              placeholder="Ghi Chú"
+                           ></textarea>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="modal-btn-addInvestor">Add</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--Modal Contractor-->
+      <div
+         class="modal fade"
+         id="contractor-modal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thêm thầu xây dựng</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div>
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-nameInvestor">Tên Nhà Thầu Xây Dựng <span style="color: red">*</span></label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-nameContractor"
+                              class="form-control"
+                              placeholder="Tên Nhà Thầu Xây Dựng"
+                           />
+                           <span class="d-none note-error">Nhập tên</span>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-descriptionContractor">Mô Tả</label>
+                        </div>
+                        <div class="col-12">
+                           <textarea
+                              name=""
+                              id="inp-descriptionContractor"
+                              cols="30"
+                              rows="5"
+                              class="form-control"
+                              placeholder="Mô Tả"
+                           ></textarea>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-addressContractor">Địa Chỉ Trụ Sở</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-addressContractor"
+                              class="form-control"
+                              placeholder="Địa Chỉ Trụ Sở"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-phoneContractor">Số Điện Thoại</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-phoneContractor"
+                              class="form-control"
+                              placeholder="Số Điện Thoại"
+                              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-phone2Contractor">Số Điện Thoại 2</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-phone2Contractor"
+                              class="form-control"
+                              placeholder="Số Điện Thoại 2"
+                              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-faxContractor">Fax</label>
+                        </div>
+                        <div class="col-12">
+                           <input type="text" name="" id="inp-faxContractor" class="form-control" placeholder="Fax" />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-emailContractor">Email</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-emailContractor"
+                              class="form-control"
+                              placeholder="Email"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-websiteContractor">Website</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-websiteContractor"
+                              class="form-control"
+                              placeholder="Website"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-noteContractor">Note</label>
+                        </div>
+                        <div class="col-12">
+                           <textarea
+                              name=""
+                              id="inp-noteContractor"
+                              cols="30"
+                              rows="5"
+                              class="form-control"
+                              placeholder="Ghi Chú"
+                           ></textarea>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="modal-btn-addContractor">Add</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--Modal DesignUnit-->
+      <div
+         class="modal fade"
+         id="designUnit-modal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thêm Đơn vị Thiết Kế</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div>
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-nameInvestor">Tên Đơn vị Thiết Kế <span style="color: red">*</span></label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-nameDesignUnit"
+                              class="form-control"
+                              placeholder="Tên Đơn vị Thiết Kế"
+                           />
+                           <span class="d-none note-error">Nhập tên</span>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-descriptionDesignUnit">Mô Tả</label>
+                        </div>
+                        <div class="col-12">
+                           <textarea
+                              name=""
+                              id="inp-descriptionDesignUnit"
+                              cols="30"
+                              rows="5"
+                              class="form-control"
+                              placeholder="Mô Tả"
+                           ></textarea>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-addressDesignUnit">Địa Chỉ Trụ Sở</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-addressDesignUnit"
+                              class="form-control"
+                              placeholder="Địa Chỉ Trụ Sở"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-phoneDesignUnit">Số Điện Thoại</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-phoneDesignUnit"
+                              class="form-control"
+                              placeholder="Số Điện Thoại"
+                              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-phone2DesignUnit">Số Điện Thoại 2</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-phone2DesignUnit"
+                              class="form-control"
+                              placeholder="Số Điện Thoại 2"
+                              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-faxDesignUnit">Fax</label>
+                        </div>
+                        <div class="col-12">
+                           <input type="text" name="" id="inp-faxDesignUnit" class="form-control" placeholder="Fax" />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-emailDesignUnit">Email</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-emailDesignUnit"
+                              class="form-control"
+                              placeholder="Email"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-websiteDesignUnit">Website</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-websiteDesignUnit"
+                              class="form-control"
+                              placeholder="Website"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-noteDesignUnit">Note</label>
+                        </div>
+                        <div class="col-12">
+                           <textarea
+                              name=""
+                              id="inp-noteDesignUnit"
+                              cols="30"
+                              rows="5"
+                              class="form-control"
+                              placeholder="Ghi Chú"
+                           ></textarea>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="modal-btn-addDesignUnit">Add</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--Modal Utilities-->
+      <div
+         class="modal fade"
+         id="utilities-modal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thêm Tiện Ích</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div>
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-nameUtilities">Tên Tiện Ích <span style="color: red">*</span></label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-nameUtilities"
+                              class="form-control"
+                              placeholder="Tên Tiện Ích"
+                           />
+                           <span class="d-none note-error">Nhập tên</span>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-descriptionUtilities">Mô Tả</label>
+                        </div>
+                        <div class="col-12">
+                           <textarea
+                              name=""
+                              id="inp-descriptionUtilities"
+                              cols="30"
+                              rows="5"
+                              class="form-control"
+                              placeholder="Mô Tả"
+                           ></textarea>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-addressUtilities">Địa Chỉ</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-addressUtilities"
+                              class="form-control"
+                              placeholder="Địa Chỉ"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-filePhotoUtilities">Hình Ảnh</label>
+                        </div>
+                        <div class="col-12">
+                           <input type="file" name="" id="inp-filePhotoUtilities" accept="image/*" />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12"></div>
+                        <div class="col-12">
+                           <div id="wrapper-photoUtilities"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="modal-btn-addUtilities">Add</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--Modal RegionLink-->
+      <div
+         class="modal fade"
+         id="regionLink-modal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thêm Vùng Kết Nối</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div>
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-nameRegionLink">Tên Vùng Kết Nối <span style="color: red">*</span></label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-nameRegionLink"
+                              class="form-control"
+                              placeholder="Tên Vùng Kết Nối"
+                           />
+                           <span class="d-none note-error">Nhập tên</span>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-descriptionRegionLink">Mô Tả</label>
+                        </div>
+                        <div class="col-12">
+                           <textarea
+                              name=""
+                              id="inp-descriptionRegionLink"
+                              cols="30"
+                              rows="5"
+                              class="form-control"
+                              placeholder="Mô Tả"
+                           ></textarea>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-addressRegionLink">Địa Chỉ</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-addressRegionLink"
+                              class="form-control"
+                              placeholder="Địa Chỉ"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-filePhotoRegionLink">Hình Ảnh</label>
+                        </div>
+                        <div class="col-12">
+                           <input type="file" name="" id="inp-filePhotoRegionLink" accept="image/*" />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12"></div>
+                        <div class="col-12">
+                           <div id="wrapper-photoRegionLink"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="modal-btn-addRegionLink">Add</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <!-- Bootstrap 4 -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- AdminLTE App -->
+      <script src="../../assets/plugin/adminLTE/dist/js/adminlte.min.js"></script>
+      <!--My script-->
+      <script src="../../assets/js/dashboard/Project/ProjectAddAdmin.js"></script>
+      <!-- Toastr -->
+      <script src="../../assets/plugin/adminLTE/toastr/toastr.min.js"></script>
+   </body>
+</html>
+
+<style>
+   .nav-sidebar .activeLeftNav {
+      background-color: #198754;
+   }
+
+   .nav-sidebar .activeLeftNav p {
+      color: white;
+   }
+
+   .note-error {
+      color: red;
+   }
+</style>

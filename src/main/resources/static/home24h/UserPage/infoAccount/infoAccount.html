@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dự Án BĐS</title>
+
+      <!--Boottrap, JQuery-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <!--FONT AWESOME-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+      <link
+         href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Lora&display=swap"
+         rel="stylesheet"
+      />
+      <!--My Script-->
+      <script src="../../assets/js/userPage/infoAccount/infoAccount.js"></script>
+
+      <!-- Toastr -->
+      <link rel="stylesheet" href="../../assets/plugin/adminLTE/toastr/toastr.min.css" />
+      <script src="../../assets/plugin/adminLTE/toastr/toastr.min.js"></script>
+   </head>
+   <body>
+      <div id="header">
+         <!-- 1. Header - Navbar menu -->
+         <section style="background-color: rgb(11, 44, 61)">
+            <div id="header-navbar" style="background-color: rgb(11, 44, 61)" class="">
+               <nav class="navbar navbar-light navbar-expand-lg container">
+                  <a href="../home/home.html" class="navbar-brand">
+                     <img src="/images/Default/logo-white.png" />
+                  </a>
+                  <button
+                     class="navbar-toggler py-2"
+                     type="button"
+                     data-toggle="collapse"
+                     data-target="#navbarSupportedContent"
+                     aria-controls="navbarSupportedContent"
+                     aria-expanded="false"
+                     aria-label="Toggle navigation"
+                     style="background-color: #b39359"
+                  >
+                     <i class="fa-solid fa-bars text-light"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active px-2">
+                           <a class="nav-link" href="../home/home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                           <a
+                              class="nav-link"
+                              href="#"
+                              id="navbarDropdown2"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                           >
+                              Properties
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                              <a class="dropdown-item" href="#">Vision & Mission</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Team</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                              <hr class="p-0 m-0" />
+                           </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                           <a
+                              class="nav-link"
+                              href="#"
+                              id="navbarDropdown2"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                           >
+                              Pages
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                              <a class="dropdown-item" href="#">Vision & Mission</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Team</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                              <hr class="p-0 m-0" />
+                           </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                           <a
+                              class="nav-link"
+                              href="#"
+                              id="navbarDropdown5"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                           >
+                              Contact
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                              <a class="dropdown-item" href="#">Vision & Mission</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Team</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                              <hr class="p-0 m-0" />
+                           </div>
+                        </li>
+                     </ul>
+                     <div id="container-infoAccount" style="display: none">
+                        <ul class="navbar-nav ml-auto">
+                           <li class="nav-item dropdown px-2">
+                              <a
+                                 class="nav-link a-info"
+                                 href="#"
+                                 id="navbarDropdown2"
+                                 role="button"
+                                 data-toggle="dropdown"
+                                 aria-haspopup="true"
+                                 aria-expanded="false"
+                              >
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                 <a
+                                    class="dropdown-item dashboardPage"
+                                    href="../../DashBoard/RealestateAdmin/RealestateAdmin.html"
+                                    style="display: none"
+                                    >DashBoard</a
+                                 >
+                                 <hr class="p-0 m-0" />
+                                 <a class="dropdown-item" href="../../UserPage/infoAccount/infoAccount.html">Account</a>
+                                 <hr class="p-0 m-0" />
+                                 <a class="dropdown-item" href="../../UserPage/myRealestates/myRealestates.html"
+                                    >My Realestates</a
+                                 >
+                                 <hr class="p-0 m-0" />
+                                 <a class="dropdown-item" href="../../UserPage/addRealestates/addRealestates.html"
+                                    >Add Realestates</a
+                                 >
+                                 <hr class="p-0 m-0" />
+                              </div>
+                           </li>
+                           <li>
+                              <button class="btn btn-danger" id="btn-logout">Log Out</button>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div id="container-loginAndRegister">
+                        <a href="../register/register.html" class="btn px-2 mx-2 bg-primary text-white">Register</a>
+                        <a href="../login/login.html" class="btn px-2 bg-info text-white">Log In</a>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </section>
+
+         <!--BackGround Header-->
+         <section class="bg-header align-items-center d-flex">
+            <div class="container text-white text-center">
+               <h6>My Account</h6>
+               <h1>My Account!</h1>
+               <h5>Your account information and you can change your password here</h5>
+            </div>
+         </section>
+
+         <!--end-->
+      </div>
+
+      <div id="main">
+         <!--FORM THÔNG TIN-->
+         <section class="container">
+            <div class="row py-5">
+               <div class="col-12 col-md-6 mt-4 mt-md-0 infoUser">
+                  <div class="form-group">
+                     <label for="inp-username" style="font-weight: bold">Username</label>
+                     <input type="text" name="" id="inp-username" class="form-control" readonly />
+                  </div>
+                  <div class="form-group">
+                     <label for="inp-email" style="font-weight: bold">Email</label>
+                     <input type="text" name="" id="inp-email" class="form-control" readonly />
+                  </div>
+                  <div class="form-group">
+                     <a href="#" id="btn-changePassword">Change Password</a>
+                  </div>
+               </div>
+
+               <div class="col-12 col-md-6">
+                  <div>
+                     <img
+                        src="/images/Default/information-1015297_1280.jpg"
+                        alt=""
+                        style="max-width: 100%"
+                     />
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--MAIN CONTACT US-->
+         <section id="main-contact">
+            <div class="" style="background-color: rgb(11, 44, 61); position: relative">
+               <img
+                  src="/images/Default/home-1.png"
+                  alt=""
+                  style="position: absolute; bottom: 0; right: 0; width: 35%"
+                  class="img-contact"
+               />
+               <div class="container">
+                  <div class="row py-5">
+                     <div class="col-sm-12 col-md-12 col-lg-6 col-12">
+                        <h2 class="text-white">Are you a Home Owner ?</h2>
+                        <p style="color: #b39359">Put your email address and get listed.</p>
+                        <div style="position: relative">
+                           <input
+                              type="text"
+                              name=""
+                              id=""
+                              class="form-control my-5"
+                              style="
+                                 background-color: transparent;
+                                 border-color: #b39359;
+                                 color: #fff;
+                                 border-radius: 10px;
+                              "
+                           />
+                           <button style="position: absolute; top: 5px; right: 10px">Get Listed</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <!--FOOTER-->
+      <div id="footer">
+         <div class="py-3 container">
+            <div class="row py-5">
+               <div class="col-sm-3 col-12 pt-3">
+                  <img src="/images/Default/logo (1).svg" class="py-3" />
+                  <p>
+                     Properties are most budget friendly so you have are find opportunity is main responsibility to
+                     clients
+                  </p>
+               </div>
+               <div class="col-sm-3 col-12 p-3">
+                  <h4>Information.</h4>
+                  <p>Properties</p>
+                  <p>Careers</p>
+                  <p>Payment</p>
+                  <p>Blog Post</p>
+               </div>
+               <div class="col-sm-3 col-12 pt-3">
+                  <h4>Support.</h4>
+                  <p>Add Property</p>
+                  <p>Help line</p>
+                  <p>Our Agents</p>
+                  <p>features</p>
+               </div>
+               <div class="col-sm-3 col-12 pt-3">
+                  <h4>Address.</h4>
+                  <p>2104 Charmaine Lane Amarillo, New York</p>
+                  <span class="mr-3"><i class="fa-brands fa-square-facebook fa-2x"></i></span>
+                  <span class="mr-3"><i class="fa-brands fa-square-instagram fa-2x"></i></span>
+                  <span><i class="fa-brands fa-square-twitter fa-2x"></i></span>
+               </div>
+            </div>
+            <p class="pb-5">© <span style="color: #b39359">CodeCarnival.</span> All Rights Reserved - Privacy Policy</p>
+         </div>
+         <div>
+            <img class="img-footer img-fluid" src="/images/Default/pattern (1).png" alt="" />
+         </div>
+      </div>
+
+      <!--Modal Change Password-->
+      <div id="changePassword-modal" class="modal fade" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content p-4">
+               <div class="row form-group">
+                  <label for="inp-oldPass">Old Password</label>
+                  <input type="password" name="" id="inp-oldPass" class="form-control" />
+                  <span class="note-error d-none">Nhập mật khẩu cũ</span>
+               </div>
+
+               <div class="row form-group">
+                  <label for="inp-newPass">New PassWord</label>
+                  <input type="password" name="" id="inp-newPass" class="form-control" />
+                  <span class="note-error d-none">Nhập mật khẩu mới</span>
+               </div>
+
+               <div class="form-group row">
+                  <div class="col-sm-12 text-right">
+                     <button class="btn btn-success" id="btn-changePassword-modal">Change</button>
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+
+   <style>
+      :root {
+         --main-color: #b39359;
+      }
+
+      body {
+         font-family: "Lora";
+      }
+
+      button {
+         color: white;
+         font-weight: bold;
+         background-color: var(--main-color);
+         border: 1px solid transparent;
+         padding: 0.375rem 0.75rem;
+         font-size: 1rem;
+         border-radius: 10px;
+         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+         /* box-shadow: 1px 1px 10px 0.2px rgb(109, 109, 11); */
+      }
+
+      button:focus {
+         outline: none;
+      }
+
+      button:hover {
+         transform: scale(1.1);
+         box-shadow: 1px 1px 5px 1px rgb(106, 124, 6);
+      }
+
+      .btn {
+         color: white;
+         font-weight: bold;
+         border: 1px solid transparent;
+         padding: 0.375rem 0.75rem;
+         font-size: 1rem;
+         border-radius: 10px;
+         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+         box-shadow: 1px 1px 5px 0.2px rgb(54, 54, 7);
+      }
+
+      /* PHẦN CSS HEADER */
+      /*-----------------------------------------*/
+      @media (max-width: 990px) {
+         .dropdown-menu {
+            background-color: transparent;
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin-top: 5px;
+            border: none;
+            box-shadow: none;
+            z-index: 200;
+         }
+
+         #header-navbar div > a {
+            color: white;
+            padding: 8px 30px;
+            font-size: 1.2rem;
+         }
+
+         a.dropdown-item::before {
+            content: "\25B6";
+            position: absolute;
+            left: 10px;
+            color: white;
+         }
+      }
+
+      #header-navbar li > a:nth-child(1) {
+         color: white;
+         font-size: 1.2rem;
+      }
+
+      #header-navbar div {
+         border-radius: 15px;
+      }
+
+      #header-navbar div > a:hover {
+         background-color: var(--main-color);
+      }
+
+      .bg-header {
+         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/Default/bg-1.png");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         height: 400px;
+      }
+
+      /* PHẦN CSS MAIN 
+      -------------------------------------------- */
+      .form-control {
+         border-radius: 10px;
+         height: 50px;
+      }
+
+      @media screen and (max-width: 992px) {
+         .img-contact {
+            display: none;
+         }
+      }
+
+      .note-error {
+         color: red;
+      }
+
+      .infoUser {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+
+      /* PHẦN CSS FOOTER */
+      /*-----------------------------------------*/
+      #footer {
+         position: relative;
+         background-color: rgb(238, 238, 238);
+      }
+
+      .img-footer {
+         position: absolute;
+         bottom: 0;
+      }
+   </style>
+</html>

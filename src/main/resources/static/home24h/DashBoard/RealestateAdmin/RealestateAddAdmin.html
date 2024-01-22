@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Admin: Home24h</title>
+
+      <!--     Fonts and icons     -->
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
+      />
+
+      <!--FONT AWESOME-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+      <!-- Theme style -->
+      <link rel="stylesheet" href="../../assets/plugin/adminLTE/dist/css/adminlte.min.css" />
+
+      <!--Boottrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+      <!-- Toastr -->
+      <link rel="stylesheet" href="../../assets/plugin/adminLTE/toastr/toastr.min.css" />
+
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+      <!--My script-->
+      <script src="../../assets/js/dashboard/Realestate/RealestateAddAdmin.js"></script>
+   </head>
+   <body class="hold-transition sidebar-mini">
+      <!-- Site wrapper -->
+      <div class="wrapper">
+         <!-- Navbar -->
+         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+               </li>
+            </ul>
+         </nav>
+         <!-- /.navbar -->
+
+         <!-- Main Sidebar Container -->
+         <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../../UserPage/Home/Home.html" class="brand-link">
+               <img
+                  src="https://tiimg.tistatic.com/co_logo/7562243/home24h-v3.jpg"
+                  class="brand-image img-circle elevation-3"
+                  style="opacity: 0.8"
+               />
+               <span class="brand-text font-weight-bold" style="color: wheat">Home24h</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+               <!-- Sidebar user (optional) -->
+               <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                  <!-- <div class="image">
+                    <img src="#" class="img-circle elevation-2" alt="User Image" />
+                  </div> -->
+                  <div class="info">
+                     <a href="#" class="text-center" style="font-weight: bold"></a>
+                  </div>
+               </div>
+
+               <!-- Sidebar Menu -->
+               <nav class="mt-2">
+                  <ul
+                     class="nav nav-pills nav-sidebar flex-column"
+                     data-widget="treeview"
+                     role="menu"
+                     data-accordion="false"
+                  >
+                     <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+
+                     <li class="nav-item">
+                        <a href="../LayoutAdmin/LayoutAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-layer-group"></i>
+                           <p>Mặt Bằng Tầng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../ContractorAdmin/ContractorAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-hard-hat"></i>
+                           <p>Nhà Thầu Xây Dựng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../DesignUnitAdmin/DesignUnitAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-drafting-compass"></i>
+                           <p>Đơn Vị Thiết Kế</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../InvestorAdmin/InvestorAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-user-tie"></i>
+                           <p>Nhà Đầu Tư</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../RegionLinkAdmin/RegionLinkAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-route"></i>
+                           <p>Kết Nối Vùng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../UtilitiesAdmin/UtilitiesAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-swimming-pool"></i>
+                           <p>Tiện Ích</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../CustomerAdmin/CustomerAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-user-friends"></i>
+                           <p>Khách Hàng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../UserAdmin/UserAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-user"></i>
+                           <p>Người Dùng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../ProjectAdmin/ProjectAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-building"></i>
+                           <p>Dự Án Xây Dựng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item activeLeftNav">
+                        <a href="../RealestateAdmin/RealestateAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-city"></i>
+                           <p>Thông Tin BĐS</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="#" class="nav-link">
+                           <i class="nav-icon fas fa-folder-plus"></i>
+                           <p>
+                              Địa Chính
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="../ProvinceAdmin/ProvinceAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Tỉnh Thành</p>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="../DistrictAdmin/DistrictAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Quận Huyện</p>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="../WardAdmin/WardAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Phường Xã</p>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="../StreetAdmin/StreetAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Đường Phố</p>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+
+                     <li class="nav-item" id="logout">
+                        <a href="#" class="nav-link">
+                           <i class="fa-solid fa-right-from-bracket"></i>
+                           <p>Đăng Xuất</p>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+         </aside>
+
+         <!-- Content Wrapper. Contains page content -->
+         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+               <div class="container-fluid">
+                  <div class="row mb-2">
+                     <div class="col-sm-6">
+                        <h1>Thêm Bất Động Sản</h1>
+                     </div>
+                     <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                           <li class="breadcrumb-item"><a href="#">Home</a></li>
+                           <li class="breadcrumb-item">
+                              <a href="../RealestateAdmin/RealestateAdmin.html">BĐS</a>
+                           </li>
+                           <li class="breadcrumb-item active">Add</li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+               <!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+               <div class="my-2">
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-title">Tên Tiêu Đề <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input type="text" name="" id="inp-title" class="form-control" placeholder="Tên Tiêu Đề" />
+                        <span class="d-none note-error">Nhập tên tiêu đề</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-filePhoto">Hình Ảnh</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input type="file" name="" id="inp-filePhoto" accept="image/*" />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2"></div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <div id="wrapper-photo"></div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="my-2">
+                  <ul class="nav nav-tabs" style="cursor: pointer">
+                     <li class="nav-item nav-itemInfo">
+                        <a class="nav-link active" data-target="#info-realestate-1">Thông tin BĐS</a>
+                     </li>
+                     <li class="nav-item nav-itemInfo" style="cursor: pointer">
+                        <a class="nav-link" data-target="#info-realestate-2">Thông số 1</a>
+                     </li>
+                     <li class="nav-item nav-itemInfo" style="cursor: pointer">
+                        <a class="nav-link" data-target="#info-realestate-3">Thông số 2</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="my-3 infoAdd d-none" id="info-realestate-1">
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-province">Tỉnh <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-province" class="form-control">
+                           <option value="0">Chọn Tỉnh/Thành</option>
+                        </select>
+                        <span class="d-none note-error">Chọn Tỉnh</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-district">Quận/Huyện <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-district" class="form-control">
+                           <option value="0">Chọn Quận/Huyện</option>
+                        </select>
+                        <span class="d-none note-error">Chọn Quận/Huyện</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-ward">Phường/Xã <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-ward" class="form-control">
+                           <option value="0">Chọn Phường/Xã</option>
+                        </select>
+                        <span class="d-none note-error">Chọn Phường/Xã</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-street">Đường</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-street" class="form-control">
+                           <option value="0">Chọn Đường</option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-address">Địa Chỉ</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input type="text" name="" id="inp-address" class="form-control" placeholder="Địa chỉ nhà" />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-project">Dự Án</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-project" class="form-control"></select>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-type">Loại Tin <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-type" class="form-control"></select>
+                        <span class="d-none note-error">Chọn Loại Tin</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-request">Nhu Cầu <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-request" class="form-control"></select>
+                        <span class="d-none note-error">Chọn Nhu Cầu</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-customer">Khách Hàng</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6 d-flex">
+                        <select name="" id="select-customer" class="form-control"></select>
+                        <button class="btn btn-primary ml-2" id="btn-addCustomer">
+                           <i class="fa-solid fa-plus"></i>
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-acreage">Diện Tích <span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           name=""
+                           id="inp-acreage"
+                           class="form-control"
+                           placeholder="Diện tích nhà"
+                           oninput="validateInputMax2Decimal(this)"
+                           onkeypress="return isPositiveDecimal(event)"
+                        />
+                        <span class="d-none note-error">Chọn Diện Tích BĐS</span>
+                        <span class="d-none note-error note-error-number">Nhập số thập phân</span>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-price">Giá Đăng (Triệu)<span style="color: red">*</span></label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           name=""
+                           id="inp-price"
+                           class="form-control"
+                           placeholder="Giá rao bán"
+                           oninput="formatNumber(this)"
+                        />
+                        <span class="d-none note-error">Chọn Giá Bán BĐS</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="my-3 infoAdd d-none" id="info-realestate-2">
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-longX">Chiều Dài</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           id="inp-longX"
+                           class="form-control"
+                           placeholder="Chiều Dài BĐS"
+                           oninput="validateInputMax1Decimal(this)"
+                           onkeypress="return isPositiveDecimal(event)"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-widthY">Chiều Rộng</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           id="inp-widthY"
+                           class="form-control"
+                           placeholder="Chiều Rộng BĐS"
+                           oninput="validateInputMax1Decimal(this)"
+                           onkeypress="return isPositiveDecimal(event)"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-bedRoom">Phòng Ngủ</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           id="inp-bedRoom"
+                           class="form-control"
+                           placeholder="Số phòng ngủ"
+                           onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-bathRoom">Phòng Vệ Sinh</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           id="inp-bathRoom"
+                           class="form-control"
+                           placeholder="Số nhà vệ sinh"
+                           onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="select-direction">Hướng Nhà</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <select name="" id="select-direction" class="form-control"></select>
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-apartCode">Mã Căn Hộ</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input type="text" id="inp-apartCode" class="form-control" placeholder="Mã căn hộ" />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-description">Mô Tả</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <textarea
+                           id="inp-description"
+                           class="form-control"
+                           placeholder="Mô tả chung về BĐS"
+                           cols="30"
+                           rows="10"
+                        >
+                        </textarea>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="my-3 infoAdd d-none" id="info-realestate-3">
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-adjacentFacadeNum">Mặt Tiền Tiếp Giáp</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           id="inp-adjacentFacadeNum"
+                           class="form-control"
+                           placeholder="Mặt tiền tiếp giáp"
+                           onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-numberFloors">Tầng</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           id="inp-numberFloors"
+                           class="form-control"
+                           placeholder="Tầng bao nhiêu (căn hộ)"
+                           onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-totalFloors">Tổng tầng</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           id="inp-totalFloors"
+                           class="form-control"
+                           placeholder="Tổng số tầng nhà"
+                           onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-wallArea">Diện Tích Tim Tường</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input
+                           type="text"
+                           id="inp-wallArea"
+                           class="form-control"
+                           placeholder="Diện tích tim tường"
+                           oninput="validateInputMax1Decimal(this)"
+                           onkeypress="return isPositiveDecimal(event)"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2">
+                        <label for="inp-structure">Kết Cấu</label>
+                     </div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <input type="text" id="inp-structure" class="form-control" placeholder="Kết Cấu BĐS" />
+                     </div>
+                  </div>
+               </div>
+
+               <div class="my-2">
+                  <div class="row form-group">
+                     <div class="col-12 col-sm-12 col-md-2"></div>
+                     <div class="col-12 col-sm-12 col-md-6">
+                        <button class="btn btn-success" id="btn-add">Add</button>
+                        <a class="btn btn-danger" href="../RealestateAdmin/RealestateAdmin.html">Cancel</a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- /.content -->
+         </div>
+         <!-- /.content-wrapper -->
+         <footer class="main-footer">
+            <strong>Copyright &copy; 2022-2023 <a href="https://adminlte.io">Home24h</a>.</strong> All rights reserved.
+         </footer>
+      </div>
+      <!-- ./wrapper -->
+
+      <!-- -----------------------------------------------MODAL-------------------------------------------------------------------- -->
+
+      <!--Modal Customer-->
+      <div
+         class="modal fade"
+         id="customer-modal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thêm Khách Hàng</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div>
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-contactNameCustomer">Tên Khách Hàng </label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-contactNameCustomer"
+                              class="form-control"
+                              placeholder="Tên Khách Hàng"
+                           />
+                           <span class="d-none note-error">Nhập tên</span>
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-contactTitleCustomer">Bí Danh</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-contactTitleCustomer"
+                              class="form-control"
+                              placeholder="Tên Thường Gọi"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-addressCustomer">Địa Chỉ</label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-addressCustomer"
+                              class="form-control"
+                              placeholder="Địa Chỉ"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-mobileCustomer">Số Điện Thoại <span style="color: red">*</span></label>
+                        </div>
+                        <div class="col-12">
+                           <input
+                              type="text"
+                              name=""
+                              id="inp-mobileCustomer"
+                              class="form-control"
+                              placeholder="Số Điện Thoại"
+                              onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                           />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-emailCustomer">Email</label>
+                        </div>
+                        <div class="col-12">
+                           <input type="text" name="" id="inp-emailCustomer" class="form-control" placeholder="Email" />
+                        </div>
+                     </div>
+
+                     <div class="row form-group">
+                        <div class="col-12">
+                           <label for="inp-noteCustomer">Note</label>
+                        </div>
+                        <div class="col-12">
+                           <textarea
+                              name=""
+                              id="inp-noteCustomer"
+                              cols="30"
+                              rows="5"
+                              class="form-control"
+                              placeholder="Ghi Chú"
+                           ></textarea>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="modal-btn-addCustomer">Add</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Bootstrap 4 -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- AdminLTE App -->
+      <script src="../../assets/plugin/adminLTE/dist/js/adminlte.min.js"></script>
+      <!-- Toastr -->
+      <script src="../../assets/plugin/adminLTE/toastr/toastr.min.js"></script>
+   </body>
+</html>
+
+<style>
+   .nav-sidebar .activeLeftNav {
+      background-color: #198754;
+   }
+
+   .nav-sidebar .activeLeftNav p {
+      color: white;
+   }
+
+   .note-error {
+      color: red;
+   }
+</style>

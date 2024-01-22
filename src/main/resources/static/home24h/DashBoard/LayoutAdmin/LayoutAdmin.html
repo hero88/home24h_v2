@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Admin: Home24h</title>
+
+      <!--     Fonts and icons     -->
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
+      />
+
+      <!--FONT AWESOME-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+      <!-- Theme style -->
+      <link rel="stylesheet" href="../../assets/plugin/adminLTE/dist/css/adminlte.min.css" />
+
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+      <!--Boottrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+      <!--Data Table-->
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+
+      <!-- Toastr -->
+      <link rel="stylesheet" href="../../assets/plugin/adminLTE/toastr/toastr.min.css" />
+
+      <!--My Script-->
+      <script src="../../assets/js/dashboard/Layout/LayoutAdmin.js"></script>
+   </head>
+   <body class="hold-transition sidebar-mini">
+      <!-- Site wrapper -->
+      <div class="wrapper">
+         <!-- Navbar -->
+         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+               </li>
+            </ul>
+         </nav>
+         <!-- /.navbar -->
+
+         <!-- Main Sidebar Container -->
+         <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../../UserPage/Home/Home.html" class="brand-link">
+               <img
+                  src="https://tiimg.tistatic.com/co_logo/7562243/home24h-v3.jpg"
+                  class="brand-image img-circle elevation-3"
+                  style="opacity: 0.8"
+               />
+               <span class="brand-text font-weight-bold" style="color: wheat">Home24h</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+               <!-- Sidebar user (optional) -->
+               <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                  <!-- <div class="image">
+                    <img src="#" class="img-circle elevation-2" alt="User Image" />
+                  </div> -->
+                  <div class="info">
+                     <a href="#" class="text-center" style="font-weight: bold"></a>
+                  </div>
+               </div>
+
+               <!-- Sidebar Menu -->
+               <nav class="mt-2">
+                  <ul
+                     class="nav nav-pills nav-sidebar flex-column"
+                     data-widget="treeview"
+                     role="menu"
+                     data-accordion="false"
+                  >
+                     <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+
+                     <li class="nav-item activeLeftNav">
+                        <a href="../LayoutAdmin/LayoutAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-layer-group"></i>
+                           <p>Mặt Bằng Tầng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../ContractorAdmin/ContractorAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-hard-hat"></i>
+                           <p>Nhà Thầu Xây Dựng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../DesignUnitAdmin/DesignUnitAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-drafting-compass"></i>
+                           <p>Đơn Vị Thiết Kế</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../InvestorAdmin/InvestorAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-user-tie"></i>
+                           <p>Nhà Đầu Tư</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../RegionLinkAdmin/RegionLinkAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-route"></i>
+                           <p>Kết Nối Vùng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../UtilitiesAdmin/UtilitiesAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-swimming-pool"></i>
+                           <p>Tiện Ích</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../CustomerAdmin/CustomerAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-user-friends"></i>
+                           <p>Khách Hàng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../UserAdmin/UserAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-user"></i>
+                           <p>Người Dùng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../ProjectAdmin/ProjectAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-building"></i>
+                           <p>Dự Án Xây Dựng</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="../RealestateAdmin/RealestateAdmin.html" class="nav-link">
+                           <i class="nav-icon fas fa-city"></i>
+                           <p>Thông Tin BĐS</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="#" class="nav-link">
+                           <i class="nav-icon fas fa-folder-plus"></i>
+                           <p>
+                              Địa Chính
+                              <i class="right fas fa-angle-left"></i>
+                           </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                           <li class="nav-item">
+                              <a href="../ProvinceAdmin/ProvinceAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Tỉnh Thành</p>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="../DistrictAdmin/DistrictAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Quận Huyện</p>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="../WardAdmin/WardAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Phường Xã</p>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="../StreetAdmin/StreetAdmin.html" class="nav-link">
+                                 <i class="far fa-circle nav-icon"></i>
+                                 <p>Đường Phố</p>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+
+                     <li class="nav-item" id="logout">
+                        <a href="#" class="nav-link">
+                           <i class="fa-solid fa-right-from-bracket"></i>
+                           <p>Đăng Xuất</p>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+         </aside>
+
+         <!-- Content Wrapper. Contains page content -->
+         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+               <div class="container-fluid">
+                  <div class="row mb-2">
+                     <div class="col-sm-6">
+                        <h1>Mặt Bằng Tầng</h1>
+                     </div>
+                     <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                           <li class="breadcrumb-item"><a href="#">Home</a></li>
+                           <li class="breadcrumb-item active">Layout</li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+               <!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+               <div>
+                  <div class="row justify-content-center">
+                     <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+                        <select name="" id="select-searchProject" class="form-control">
+                           <option value="0">Dự Án</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="my-4">
+                  <a class="btn btn-primary" href="../LayoutAdmin/LayoutAddAdmin.html"
+                     ><i class="fa-solid fa-plus"></i> &nbsp; Thêm</a
+                  >
+               </div>
+               <div class="table-wrapper">
+                  <table class="table table-hover table-striped table-bordered" id="layout-table">
+                     <thead style="background-color: #198754; color: white">
+                        <tr>
+                           <th scope="col">STT</th>
+                           <th scope="col">Tên</th>
+                           <th scope="col">Dự Án</th>
+                           <th scope="col">Hình Ảnh</th>
+                           <th scope="col">Cập Nhật</th>
+                        </tr>
+                     </thead>
+                     <tbody></tbody>
+                  </table>
+               </div>
+            </section>
+            <!-- /.content -->
+         </div>
+         <!-- /.content-wrapper -->
+
+         <footer class="main-footer">
+            <strong>Copyright &copy; 2022-2023 <a href="https://adminlte.io">Home24h</a>.</strong> All rights reserved.
+         </footer>
+
+         <!--Vùng modal xóa dữ liệu-->
+         <div id="deleteLayout-modal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content" style="border-radius: 15px; box-shadow: 5px 5px 10px rgb(208, 219, 219)">
+                  <div class="modal-header">
+                     <h5 class="modal-title">Xóa</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     <form>
+                        <p>Bạn có chắc chắn muốn xóa Mặt Bằng Tầng này không?</p>
+                     </form>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-danger" id="btn-delete-modal">Xác Nhận</button>
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ./wrapper -->
+
+      <!-- Bootstrap 4 -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- AdminLTE App -->
+      <script src="../../assets/plugin/adminLTE/dist/js/adminlte.min.js"></script>
+      <!--DataTable-->
+      <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+      <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+      <!-- Toastr -->
+      <script src="../../assets/plugin/adminLTE/toastr/toastr.min.js"></script>
+   </body>
+</html>
+
+<style>
+   .nav-sidebar .activeLeftNav {
+      background-color: #198754;
+   }
+
+   .nav-sidebar .activeLeftNav p {
+      color: white;
+   }
+
+   .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+   }
+</style>

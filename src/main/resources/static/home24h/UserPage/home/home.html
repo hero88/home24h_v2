@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dự Án BĐS</title>
+
+      <!--Boottrap, JQuery-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <!--FONT AWESOME-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+      <!--FONT GOOGLE-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Lora&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- THƯ VIỆN SWIPER-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+
+      <!--JS-->
+      <script src="../../assets/js/userPage/home/home.js"></script>
+   </head>
+
+   <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+         Tawk_LoadStart = new Date();
+      (function () {
+         var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+         s1.async = true;
+         s1.src = "https://embed.tawk.to/64a66e1694cf5d49dc61d95b/1h4l1s2uu";
+         s1.charset = "UTF-8";
+         s1.setAttribute("crossorigin", "*");
+         s0.parentNode.insertBefore(s1, s0);
+      })();
+   </script>
+   <!--End of Tawk.to Script-->
+
+   <body>
+      <div style="background-color: #fdfbfd">
+         <div id="header">
+            <!--Header nền-->
+            <!-- 1. Header - Navbar menu -->
+            <div id="header-navbar" style="background-color: rgb(11, 44, 61)" class="">
+               <nav class="navbar navbar-light navbar-expand-lg container">
+                  <a href="../home/home.html" class="navbar-brand">
+                     <img src="/images/Default/logo-white.png" />
+                  </a>
+                  <button
+                     class="navbar-toggler py-2"
+                     type="button"
+                     data-toggle="collapse"
+                     data-target="#navbarSupportedContent"
+                     aria-controls="navbarSupportedContent"
+                     aria-expanded="false"
+                     aria-label="Toggle navigation"
+                     style="background-color: #b39359"
+                  >
+                     <i class="fa-solid fa-bars text-light"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active px-2">
+                           <a class="nav-link" href="../home/home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                           <a
+                              class="nav-link"
+                              href="#"
+                              id="navbarDropdown2"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                           >
+                              Properties
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                              <a class="dropdown-item" href="#">Vision & Mission</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Team</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                              <hr class="p-0 m-0" />
+                           </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                           <a
+                              class="nav-link"
+                              href="#"
+                              id="navbarDropdown2"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                           >
+                              Pages
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                              <a class="dropdown-item" href="#">Vision & Mission</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Team</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                              <hr class="p-0 m-0" />
+                           </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                           <a
+                              class="nav-link"
+                              href="#"
+                              id="navbarDropdown5"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                           >
+                              Contact
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                              <a class="dropdown-item" href="#">Vision & Mission</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Team</a>
+                              <hr class="p-0 m-0" />
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                              <hr class="p-0 m-0" />
+                           </div>
+                        </li>
+                     </ul>
+                     <div id="container-infoAccount" style="display: none">
+                        <ul class="navbar-nav ml-auto">
+                           <li class="nav-item dropdown px-2">
+                              <a
+                                 class="nav-link a-info"
+                                 href="#"
+                                 id="navbarDropdown2"
+                                 role="button"
+                                 data-toggle="dropdown"
+                                 aria-haspopup="true"
+                                 aria-expanded="false"
+                              >
+                              </a>
+                              <div class="dropdown-menu mb-2" aria-labelledby="navbarDropdown2">
+                                 <a
+                                    class="dropdown-item dashboardPage"
+                                    href="../../DashBoard/RealestateAdmin/RealestateAdmin.html"
+                                    style="display: none"
+                                    >DashBoard</a
+                                 >
+                                 <hr class="p-0 m-0" />
+                                 <a class="dropdown-item" href="../../UserPage/infoAccount/infoAccount.html">Account</a>
+                                 <hr class="p-0 m-0" />
+                                 <a class="dropdown-item" href="../../UserPage/myRealestates/myRealestates.html"
+                                    >My Realestates</a
+                                 >
+                                 <hr class="p-0 m-0" />
+                                 <a class="dropdown-item" href="../../UserPage/addRealestates/addRealestates.html"
+                                    >Add Realestates</a
+                                 >
+                                 <hr class="p-0 m-0" />
+                              </div>
+                           </li>
+                           <li class="nav-item">
+                              <button class="btn btn-danger" id="btn-logout">Log Out</button>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div id="container-loginAndRegister" class="my-2">
+                        <a href="../register/register.html" class="btn px-2 mx-2 bg-primary text-white">Register</a>
+                        <a href="../login/login.html" class="btn px-2 bg-info text-white">Log In</a>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+
+            <div class="header-container">
+               <!--Hình ảnh tòa nhà ở header-->
+               <div class="header-image">
+                  <img src="/images/Default/home-1.png" alt="" class="img-fluid" style="width: 1000px" />
+               </div>
+               <div class="header-image1">
+                  <img src="/images/Default/shape4.svg" alt="" class="img-fluid" />
+               </div>
+
+               <!--Phần nội dung header-->
+               <div class="container">
+                  <div class="row d-flex align-item-center" style="height: 800px">
+                     <div class="col-sm-12 col-md-6 my-auto text-white">
+                        <h5 class="py-4">A new way to find Properties</h5>
+                        <h1>Find your Most Suitable Property</h1>
+                        <p class="py-5">
+                           Huge number of propreties availabe here to buy and sell, also you can find here co-living
+                           property. So you have lots of opportunity
+                        </p>
+                        <button>Contact Us</button>
+                     </div>
+                  </div>
+               </div>
+               <!--end-->
+            </div>
+
+            <div id="search" class="my-2">
+               <div class="container" style="background-color: var(--main-color); border-radius: 15px">
+                  <div class="row">
+                     <div class="col-12 col-md-10">
+                        <div class="row py-2">
+                           <div class="col-12 col-md-3">
+                              <label for="select-search-request" class="text-white">Request</label>
+                              <select name="" id="select-search-request" class="form-control">
+                                 <option value="0">Select Request</option>
+                              </select>
+                           </div>
+                           <div class="col-12 col-md-3">
+                              <label for="select-search-type" class="text-white">Type</label>
+                              <select name="" id="select-search-type" class="form-control">
+                                 <option value="0">Select Type</option>
+                              </select>
+                           </div>
+                           <div class="col-12 col-md-3">
+                              <label for="inp-search-minPrice" class="text-white">Min Price</label>
+                              <input
+                                 id="inp-search-minPrice"
+                                 class="form-control"
+                                 placeholder="Min Price"
+                                 oninput="formatNumber(this)"
+                              />
+                           </div>
+                           <div class="col-12 col-md-3">
+                              <label for="inp-search-maxPrice" class="text-white">Max Price</label>
+                              <input
+                                 name=""
+                                 id="inp-search-maxPrice"
+                                 class="form-control"
+                                 placeholder="Max Price"
+                                 oninput="formatNumber(this)"
+                              />
+                           </div>
+                        </div>
+                        <div class="row py-2">
+                           <div class="col-12 col-md-4">
+                              <label for="select-search-province" class="text-white">City</label>
+                              <select name="" id="select-search-province" class="form-control">
+                                 <option value="0">Select Province</option>
+                              </select>
+                           </div>
+                           <div class="col-12 col-md-4">
+                              <label for="select-search-district" class="text-white">District</label>
+                              <select name="" id="select-search-district" class="form-control">
+                                 <option value="0">Select District</option>
+                              </select>
+                           </div>
+                           <div class="col-12 col-md-4">
+                              <label for="select-search-ward" class="text-white">Ward</label>
+                              <select name="" id="select-search-ward" class="form-control">
+                                 <option value="0">Select Ward</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-12 col-md-2 my-auto justify-content-center d-flex py-2">
+                        <button
+                           style="border-radius: 15p; color: white; background-color: rgb(11, 44, 61)"
+                           id="btn-search"
+                        >
+                           <i class="fa-solid fa-magnifying-glass fa-2x p-2"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="main">
+            <!--MAIN BEST CHOICE-->
+            <section id="main-bestChoice" class="container py-5 my-5">
+               <div class="row">
+                  <div class="col-12 text-center py-2">
+                     <h4>Best Choice</h4>
+                  </div>
+                  <div class="col-12 text-center pt-2">
+                     <h2>Popular Properties</h2>
+                  </div>
+                  <div class="col-12">
+                     <div class="swiper-container bestChoice">
+                        <div class="swiper-wrapper" id="swiperBestChoice">
+                           <!-- <div class="swiper-slide bestChoice"><img src="assets/properties1.jpg" alt="" class="img-fluid"/></div>
+                           <div class="swiper-slide bestChoice"><img src="assets/properties3.jpg" alt="" class="img-fluid"/></div> -->
+
+                           <!-- <div class="swiper-slide bestChoice">
+                              <div class="card" style="border-radius: 20px;">
+                                 <img class="card-img-top p-2" style="border-radius: 20px;" src="assets/Image/House/properties1.jpg" alt="Card image cap">
+                                 <div class="card-body">
+                                    <h5 class="card-title py-0" style="font-weight: bold; color:#b39359">Ngôi Nhà Ma</h5>
+                                 
+                                    <ul class="list-group">
+                                       <li class="list-group text-left" style="font-size: 12px;" > Address : 155 Ngô Gia Tự</li>
+                                       <li class="list-group text-left" style="font-size: 12px;">Add: 10/11/2020</li>
+                                       <li class="list-group " style="font-size: 15px;" >
+                                          <div class="form-inline d-flex justify-content-between">
+                                             <span> <i class="fa-solid fa-bed"></i> 10 </span>
+                                             <span> <i class="fa-solid fa-restroom"></i> 10 </span>
+                                             <span> <i class="fa-solid fa-rug"></i> 100m2</span>
+                                          </div>
+                                       </li>              
+                                    </ul>
+                                 </div>
+                                 <div class="card-body py-0 text-left">
+                                    <p style="font-weight: bold;">Price: 100 triệu</p>
+                                 </div>
+                              </div>
+                           </div> -->
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination bestChoice"></div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- MAIN WHY CHOOSE US-->
+            <section id="main-whyChooseUs" class="container pb-5 my-2">
+               <div class="row">
+                  <div class="col-12 text-center p-2">
+                     <h4>Why Choose Us</h4>
+                  </div>
+               </div>
+
+               <div class="row p-3">
+                  <div class="col-sm-6">
+                     <h2>We Provide Latest Properties For Our Valuable Clients.</h2>
+                  </div>
+                  <div class="col-sm-6">
+                     <p>
+                        Huge number of properties available here for buying, selling, and renting. You can also find
+                        co-living properties here, offering you lots of opportunities to choose from and enjoy huge
+                        discounts.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="row p-3">
+                  <div class="col-sm-12 col-md-6 col-12">
+                     <img src="/images/Default/about1.png" alt="" style="width: 100%" />
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-12">
+                     <div class="row p-2">
+                        <div class="col-md-3 col-sm-4 col-3 text-right">
+                           <img src="/images/Default/doller.png" alt="" />
+                        </div>
+                        <div class="col-md-9 col-sm-8 col-9 p-0">
+                           <h3>Budget Friendly</h3>
+                           <p>
+                              Properties are budget-friendly, giving you the opportunity to find the best one within
+                              your budget.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="row p-2">
+                        <div class="col-md-3 col-sm-4 text-right col-3">
+                           <img src="/images/Default/location.png" alt="" />
+                        </div>
+                        <div class="col-md-9 col-sm-8 col-9 p-0">
+                           <h3>Prime Location</h3>
+                           <p>Properties are located in prime locations, ensuring convenience and accessibility.</p>
+                        </div>
+                     </div>
+                     <div class="row p-2">
+                        <div class="col-md-3 col-sm-4 text-right col-3">
+                           <img src="/images/Default/trusted.png" alt="" />
+                        </div>
+                        <div class="col-md-9 col-sm-8 col-9 p-0">
+                           <h3>Trusted By Thousands</h3>
+                           <p>Our services are trusted by thousands of satisfied clients.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <!--MAIN NEWLY ADDED-->
+            <section id="main-newAdded" class="container py-5 my-5">
+               <div class="row">
+                  <div class="col-sm-12 col-12 text-center mb-3">
+                     <h4>Newly Added</h4>
+                  </div>
+               </div>
+
+               <div class="row my-3">
+                  <div class="col-sm-6 col-12">
+                     <h2>Featured Properties</h2>
+                  </div>
+                  <div class="col-sm-6 col-12 justify-content-around d-flex">
+                     <a class="activeProperties main-newAdded-properties" data-target="allProperties">All properties</a>
+                     <a class="main-newAdded-properties" data-target="forRent">For rent</a>
+                     <a class="main-newAdded-properties" data-target="forBuy">For buy</a>
+                  </div>
+               </div>
+
+               <div class="row my-3" id="newAdded-realestates">
+                  <!--
+                 <div class="col-sm-6 col-md-4 col-12 mt-3">
+                   <div class="card" style="border-radius: 20px;">
+                     <img class="card-img-top p-2" style="border-radius: 20px;" src="assets/Image/House/properties1.jpg" alt="Card image cap">
+                     <div class="card-body">
+                       <h5 class="card-title" style="font-weight: bold;">Ngôi Nhà Ma</h5>
+                     </div>
+                     <ul class="list-group">
+                       <li class="list-group" style="font-size: 15px;">Address: 155 Ngô Gia Tự</li>
+                       <li class="list-group" style="font-size: 15px;">Add: 10/11/2020</li>
+                     </ul>
+                     <div class="card-body p-0">
+                       <p>Diện tích: 100m2</p>
+                       <p style="font-weight: bold;">Price: 100 triệu</p>
+                     </div>
+                   </div>
+                 </div>
+                 -->
+               </div>
+            </section>
+
+            <!--MAIN YOUTUBE-->
+            <section id="main-youtube" style="background-color: rgb(11, 44, 61)" class="container py-3 my-5">
+               <div class="row py-3">
+                  <div class="col-12 col-lg-7 pl-5 my-auto">
+                     <p style="color: #b39359">Take a video tour</p>
+                     <p style="color: white; font-size: 2.5rem" class="py-3">
+                        Watch the video to make your decision easily
+                     </p>
+                     <p style="color: #b39359">View all</p>
+                  </div>
+                  <div class="col-12 col-lg-5">
+                     <img src="/images/Default/video.png" class="img-fluid img-video" alt="Video" />
+                     <a id="play-video"><i class="far fa-play-circle fa-4x"></i></a>
+                  </div>
+               </div>
+            </section>
+
+            <!--MAIN OUT PARTNER-->
+            <section id="main-partner" class="container py-5 mt-5">
+               <div class="row text-center">
+                  <div class="col-12 my-2">
+                     <h4>Our Partner</h4>
+                  </div>
+                  <div class="col-12">
+                     <h2>Reliable Partners</h2>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12">
+                     <div class="swiper-container outPartner">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide"><img src="/images/Default/brand1.png" alt="" /></div>
+                           <div class="swiper-slide"><img src="/images/Default/brand2.png" alt="" /></div>
+                           <div class="swiper-slide"><img src="/images/Default/brand3.png" alt="" /></div>
+                           <div class="swiper-slide"><img src="/images/Default/brand4.png" alt="" /></div>
+                           <div class="swiper-slide"><img src="/images/Default/brand5.png" alt="" /></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <!--MAIN OUT AGENT-->
+            <section id="main-ourAgen" class="container py-2 my-2">
+               <div class="row">
+                  <div class="col-sm-12 col-12 col-md-3 my-2">
+                     <h4 class="my-4">Out Agents</h4>
+                     <h2 class="my-2">Here Is Our Experts</h2>
+                     <p class="my-2">
+                        Huge number propreties availabe here for buy, sell and Rent, you a find here co-living property
+                        lots to choose here and enjoy huge.
+                     </p>
+                     <p style="color: #b39359" class="my-2">View all Post</p>
+                  </div>
+
+                  <div class="col-sm-4 col-12 col-md-3 my-2">
+                     <div class="card" style="border-bottom: 5px solid rgb(160, 144, 144)">
+                        <img class="card-img-top" src="/images/Default/person1.png" alt="Card image cap" />
+                        <div class="card-body text-center">
+                           <h5>Amelia Margaret</h5>
+                           <p style="font-size: 0.9rem">Real Estate Broker</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-12 col-md-3 my-2">
+                     <div class="card" style="border-bottom: 5px solid rgb(160, 144, 144)">
+                        <img class="card-img-top" src="/images/Default/person2.png" alt="Card image cap" />
+                        <div class="card-body text-center">
+                           <h5>Stephen Kelvin</h5>
+                           <p style="font-size: 0.9rem">Real Estate Agent</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-12 col-md-3 my-2">
+                     <div class="card" style="border-bottom: 5px solid rgb(160, 144, 144)">
+                        <img class="card-img-top" src="/images/Default/person3.png" alt="Card image cap" />
+                        <div class="card-body text-center">
+                           <h5>Michael Richard</h5>
+                           <p style="font-size: 0.9rem">Real Estate Broker</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <!--MAIN CONTACT US-->
+            <section id="main-contact">
+               <div class="" style="background-color: rgb(11, 44, 61); position: relative">
+                  <img
+                     src="/images/Default/home-1.png"
+                     alt=""
+                     style="position: absolute; bottom: 0; right: 0; width: 35%"
+                     class="img-contact"
+                  />
+                  <div class="container">
+                     <div class="row py-5">
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-12">
+                           <h2 class="text-white">Are you a Home Owner ?</h2>
+                           <p style="color: #b39359">Put your email address and get listed.</p>
+                           <div style="position: relative">
+                              <input
+                                 type="text"
+                                 class="form-control my-5"
+                                 style="
+                                    background-color: transparent;
+                                    border-color: #b39359;
+                                    color: #fff;
+                                    font-size: Lora;
+                                    height: 50px;
+                                    border-radius: 10px;
+                                 "
+                              />
+                              <button style="position: absolute; top: 5px; right: 10px">Get Listed</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+
+         <!--FOOTER-->
+         <div id="footer">
+            <div class="py-3 container">
+               <div class="row py-5">
+                  <div class="col-sm-3 col-12 pt-3">
+                     <img src="/images/Default/logo (1).svg" class="py-3" />
+                     <p>
+                        Properties are most budget friendly so you have are find opportunity is main responsibility to
+                        clients
+                     </p>
+                  </div>
+                  <div class="col-sm-3 col-12 p-3">
+                     <h4>Information.</h4>
+                     <p>Properties</p>
+                     <p>Careers</p>
+                     <p>Payment</p>
+                     <p>Blog Post</p>
+                  </div>
+                  <div class="col-sm-3 col-12 pt-3">
+                     <h4>Support.</h4>
+                     <p>Add Property</p>
+                     <p>Help line</p>
+                     <p>Our Agents</p>
+                     <p>features</p>
+                  </div>
+                  <div class="col-sm-3 col-12 pt-3">
+                     <h4>Address.</h4>
+                     <p>2104 Charmaine Lane Amarillo, New York</p>
+                     <span class="mr-3"><i class="fa-brands fa-square-facebook fa-2x"></i></span>
+                     <span class="mr-3"><i class="fa-brands fa-square-instagram fa-2x"></i></span>
+                     <span><i class="fa-brands fa-square-twitter fa-2x"></i></span>
+                  </div>
+               </div>
+               <p class="pb-5">
+                  © <span style="color: #b39359">CodeCarnival.</span> All Rights Reserved - Privacy Policy
+               </p>
+            </div>
+            <div>
+               <img class="img-footer img-fluid" src="/images/Default/pattern (1).png" alt="" />
+            </div>
+         </div>
+      </div>
+   </body>
+
+   <style>
+      /* PHẦN CSS CHUNG
+      -------------------------------- */
+      :root {
+         --main-color: #b39359;
+      }
+
+      body {
+         font-family: "Lora";
+      }
+
+      h4 {
+         color: var(--main-color);
+      }
+
+      h1 {
+         color: var(--main-color);
+         font-size: 60px;
+      }
+
+      button {
+         color: white;
+         font-weight: bold;
+         background-color: var(--main-color);
+         border: 1px solid transparent;
+         padding: 0.375rem 0.75rem;
+         font-size: 1rem;
+         border-radius: 10px;
+         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+         box-shadow: 1px 1px 10px 0.2px rgb(109, 109, 11);
+      }
+
+      button:hover {
+         transform: scale(1.1);
+         box-shadow: 1px 1px 10px 1px rgb(106, 124, 6);
+      }
+
+      button:focus {
+         outline: none;
+      }
+
+      /* PHẦN CSS HEADER
+      -------------------------------- */
+      @media (max-width: 990px) {
+         .dropdown-menu {
+            background-color: transparent;
+            position: relative;
+            width: 100%;
+            padding: 0;
+            margin-top: 5px;
+            border: none;
+            box-shadow: none;
+            z-index: 200;
+         }
+
+         #header-navbar div > a {
+            color: white;
+            /* display: block; */
+            padding: 8px 30px;
+            font-size: 1.2rem;
+         }
+
+         a.dropdown-item::before {
+            content: "\25B6";
+            position: absolute;
+            left: 10px;
+            color: white;
+         }
+      }
+
+      #header-navbar li > a:nth-child(1) {
+         color: white;
+         font-size: 1.2rem;
+      }
+
+      #header-navbar div {
+         border-radius: 15px;
+      }
+
+      #header-navbar div > a:hover {
+         background-color: var(--main-color);
+      }
+
+      .header-container {
+         height: 900px;
+         width: 100vw;
+         position: relative;
+         background-color: rgb(11, 44, 61);
+      }
+
+      .header-image {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+      }
+
+      .header-image1 {
+         position: absolute;
+         bottom: -50px;
+         left: -50px;
+      }
+
+      #select-search-province option,
+      #select-search-district option,
+      #select-search-ward option,
+      #select-search-request option,
+      #select-search-type option {
+         color: var(--main-color);
+      }
+
+      /* PHẦN CSS MAIN
+      -------------------------------- */
+      .img-video {
+         position: relative;
+         width: 100%;
+         transition: all 0.1s ease-in-out;
+      }
+
+      .img-video:hover {
+         transform: translateX(-30px);
+      }
+
+      #play-video {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+         margin: 0 auto;
+         width: 80%;
+         color: white;
+      }
+
+      @media (min-width: 768px) {
+         #play-video {
+            width: 60%;
+         }
+      }
+
+      @media screen and (max-width: 992px) {
+         .img-contact {
+            display: none;
+         }
+      }
+
+      .card {
+         transition: all 0.5s;
+      }
+
+      .card:hover {
+         transform: translateY(-20px);
+      }
+
+      #main-newAdded div:nth-child(2) a {
+         text-decoration: none;
+         font-size: 1rem;
+         color: inherit;
+         cursor: pointer;
+      }
+
+      #main-newAdded .activeProperties {
+         color: var(--main-color) !important;
+      }
+
+      .card-title {
+         display: -webkit-box;
+         -webkit-line-clamp: 2; /* Số dòng tối đa */
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+
+      .card-title {
+         height: 50px; /* Đặt chiều cao mong muốn */
+         overflow: hidden;
+      }
+
+      #swiperBestChoice a,
+      #newAdded-realestates a {
+         text-decoration: none;
+         color: inherit;
+      }
+      /* PHẦN CSS FOOTER
+      -------------------------------- */
+      #footer {
+         position: relative;
+         background-color: rgb(238, 238, 238);
+      }
+
+      .img-footer {
+         position: absolute;
+         bottom: 0;
+      }
+
+      /* CSS CHO CÁC SLIDE BẰNG THƯ VIỆN SWIPER */
+      /* ------------------------------------------------ */
+      .swiper-pagination-bullet {
+         background-color: #b39359;
+      }
+
+      .swiper-container.bestChoice {
+         width: 100%;
+         height: 550px;
+      }
+      .swiper-slide {
+         /* text-align: center; */
+         font-size: 18px;
+         background: transparent;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         -webkit-justify-content: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         -webkit-align-items: center;
+         align-items: center;
+      }
+
+      .swiper-container.outPartner {
+         width: 100%;
+         height: 200px;
+      }
+
+      .swiper-pagination {
+         color: #b39359;
+      }
+   </style>
+</html>
