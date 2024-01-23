@@ -85,7 +85,7 @@ async function checkToken() {
             //Sự kiện khi click Đăng xuất
             $("#logout").on("click", function () {
                localStorage.removeItem("home24h");
-               window.location.href = `../../UserPage/Home/Home.html`;
+               window.location.href = `../../UserPage/home/home.html`;
             });
 
             // --------------------- UPDATE ------------------------------------
